@@ -1,0 +1,6 @@
+CREATE TABLE foccacia (
+	id_foccacia INT NOT NULL AUTO_INCREMENT,
+    	nom VARCHAR(50) NOT NULL,
+    	prix DECIMAL(5,2) NOT NULL,
+    	PRIMARY KEY(id_foccacia)
+);
