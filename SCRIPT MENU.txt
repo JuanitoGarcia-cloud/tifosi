@@ -4,3 +4,4 @@ CREATE TABLE menu (
     	prix DECIMAL(5,2) NOT NULL,
     	PRIMARY KEY(id_menu)
 );
+ALTER TABLE `menu` CHANGE `nom` `nom_menu` VARCHAR(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin NOT NULL;

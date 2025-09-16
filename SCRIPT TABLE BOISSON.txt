@@ -1,0 +1,13 @@
+INSERT INTO boisson (id_boisson, nom_boisson, marque) VALUES
+(NULL, 'Coca-cola zéro', 'Coca-cola'),
+(NULL, 'Coca-cola original', 'Coca-cola'),
+(NULL, 'Fanta citron', 'Coca-cola'),
+(NULL, 'Fanta orange', 'Coca-cola'),
+(NULL, 'Capri-sun', 'Coca-cola'),
+(NULL, 'Pepsi', 'Pepsico'),
+(NULL, 'Pepsi Max zéro', 'Pepsico'),
+(NULL, 'Lipton zéro citron', 'Pepsico'),
+(NULL, 'Lipton Peach', 'Pepsico'),
+(NULL, 'Monster energy ultra gold', 'Monster'),
+(NULL, 'Monster energy ultra blue', 'Monster'),
+(NULL, 'Eau de source', 'Cristalline');

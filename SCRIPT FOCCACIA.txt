@@ -4,3 +4,4 @@ CREATE TABLE foccacia (
     	prix DECIMAL(5,2) NOT NULL,
     	PRIMARY KEY(id_foccacia)
 );
+ALTER TABLE `foccacia` CHANGE `nom` `nom_foccacia` VARCHAR(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin NOT NULL;

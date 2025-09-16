@@ -1,0 +1,1 @@
+INSERT INTO foccacia (id_foccacia, nom_foccacia, prix) VALUES (NULL, 'Mozaccia', 9.80), (NULL, 'Gorgonzollaccia', 10.80), (NULL, 'Raclaccia', 8.90), (NULL, 'Emmentalaccia', 9.80), (NULL, 'Tradizione', 8.90), (NULL, 'Hawaienne', 11.20), (NULL, 'Américaine', 10.80), (NULL, 'Paysanne', 12.80);

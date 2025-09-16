@@ -5,3 +5,4 @@ CREATE TABLE Client (
     	code_postal INT NOT NULL,
     	PRIMARY KEY(id_client)
 );
+ALTER TABLE `client` CHANGE `nom` `nom_client` VARCHAR(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin NOT NULL;
