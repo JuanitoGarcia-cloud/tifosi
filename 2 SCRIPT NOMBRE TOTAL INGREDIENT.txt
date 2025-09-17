@@ -1,0 +1,1 @@
+SELECT COUNT(id_ingredient) FROM ingredient;
