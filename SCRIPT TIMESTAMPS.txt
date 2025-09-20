@@ -1,0 +1,3 @@
+CREATE TABLE IF NOT EXISTS `tifosi`.`timestamps` (
+  `create_time` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP,
+  `update_time` TIMESTAMP NULL);

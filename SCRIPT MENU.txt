@@ -1,7 +1,29 @@
 CREATE TABLE menu (
-	id_menu INT NOT NULL AUTO_INCREMENT,
-    	nom VARCHAR(50) NOT NULL,
+	id_menu INT(11) NOT NULL AUTO_INCREMENT,
+    	nom_menu VARCHAR(50) NOT NULL,
     	prix DECIMAL(5,2) NOT NULL,
+	nom_foccacia VARCHAR(50) NOT NULL,
+	nom_boisson VARCHAR(50) NOT NULL,
     	PRIMARY KEY(id_menu)
 );
-ALTER TABLE `menu` CHANGE `nom` `nom_menu` VARCHAR(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin NOT NULL;
+// ajout index et foreign key
+CREATE TABLE IF NOT EXISTS `tifosi`.`menu` (
+  `id_menu` INT(11) NOT NULL AUTO_INCREMENT,
+  `nom_menu` VARCHAR(50) NOT NULL,
+  `prix` DECIMAL(5,2) NOT NULL,
+  `nom_foccacia` VARCHAR(50) NOT NULL,
+  `nom_boisson` VARCHAR(50) NOT NULL,
+  PRIMARY KEY (`id_menu`),
+  INDEX `fk_menu_foccacia_idx` (`nom_foccacia` ASC),
+  INDEX `fk_menu_boisson_idx` (`nom_boisson` ASC),
+  CONSTRAINT `fk_menu_foccacia`
+    FOREIGN KEY (`nom_foccacia`)
+    REFERENCES `tifosi`.`foccacia` (`nom_foccacia`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_menu_boisson`
+    FOREIGN KEY (`nom_boisson`)
+    REFERENCES `tifosi`.`boisson` (`nom_boisson`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;

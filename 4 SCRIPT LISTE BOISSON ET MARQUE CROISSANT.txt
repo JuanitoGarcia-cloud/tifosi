@@ -1,1 +1,1 @@
-SELECT nom_boisson , marque FROM boisson ORDER BY nom_boisson ASC;
+SELECT nom_boisson , nom_marque FROM boisson ORDER BY nom_boisson ASC;

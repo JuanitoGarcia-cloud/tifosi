@@ -1,6 +1,5 @@
-CREATE TABLE ingredient (
-	id_ingredient INT NOT NULL AUTO_INCREMENT,
-    	nom VARCHAR(50) NOT NULL,
-    	PRIMARY KEY(id_ingredient)
-);
-ALTER TABLE `ingredient` CHANGE `nom` `nom_ingredient` VARCHAR(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin NOT NULL;
+CREATE TABLE IF NOT EXISTS `tifosi`.`ingredient` (
+  `nom_ingredient` VARCHAR(50) NOT NULL,
+  `id_ingredient` INT(11) NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`id_ingredient`))
+ENGINE = InnoDB;

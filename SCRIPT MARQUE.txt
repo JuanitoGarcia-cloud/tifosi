@@ -1,6 +1,5 @@
-CREATE TABLE marque (
-	id_marque INT NOT NULL AUTO_INCREMENT,
-    	nom VARCHAR(50) NOT NULL,
-    	PRIMARY KEY(id_marque)
-);
-ALTER TABLE `marque` CHANGE `nom` `nom_marque` VARCHAR(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin NOT NULL;
+CREATE TABLE IF NOT EXISTS `tifosi`.`marque` (
+  `id_marque` INT(11) NOT NULL AUTO_INCREMENT,
+  `nom_marque` VARCHAR(50) NOT NULL,
+  PRIMARY KEY (`id_marque`))
+ENGINE = InnoDB;
