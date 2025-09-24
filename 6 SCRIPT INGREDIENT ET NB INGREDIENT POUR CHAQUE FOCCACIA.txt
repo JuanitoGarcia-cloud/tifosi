@@ -1,0 +1,1 @@
+SELECT `nom_foccacia`, COUNT(`nom_ingredient`) FROM `foccacia_has_ingredient` GROUP BY `nom_foccacia`;

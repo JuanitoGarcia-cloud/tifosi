@@ -1,0 +1,1 @@
+SELECT `nom_ingredient` FROM `foccacia_has_ingredient` WHERE `nom_foccacia`='Raclaccia' ORDER BY `nom_ingredient` ASC;

@@ -66,11 +66,13 @@ CREATE TABLE `foccacia` (
 --
 
 CREATE TABLE `foccacia_has_ingredient` (
+  `id_foccacia_has_ingredient` INT(11) NOT NULL AUTO_INCREMENT,
   `nom_foccacia` varchar(50) NOT NULL,
-  `quantite` int(11) NOT NULL,
+  `quantite` decimal(5,2) NOT NULL,
   `nom_ingredient` varchar(50) NOT NULL,
-  INDEX `fk_foccacia_has_ingredient_foccacia_idx` (`nom_foccacia` ASC) VISIBLE,
-  INDEX `fk_foccacia_has_ingredient_ingredient_idx` (`nom_ingredient` ASC) VISIBLE,
+  PRIMARY KEY (`id_foccacia_has_ingredient`),
+  INDEX `fk_foccacia_has_ingredient_ingredient_idx` (`nom_ingredient` ASC),
+  INDEX `fk_foccacia_has_ingredient_foccacia_idx` (`nom_foccacia` ASC),  
   CONSTRAINT `fk_foccacia_has_ingredient_foccacia`
     FOREIGN KEY (`nom_foccacia`)
     REFERENCES `tifosi`.`foccacia` (`nom_foccacia`)

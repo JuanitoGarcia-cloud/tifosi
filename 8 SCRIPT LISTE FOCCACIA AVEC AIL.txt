@@ -1,0 +1,1 @@
+SELECT `nom_foccacia` FROM `foccacia_has_ingredient` WHERE `nom_ingredient`='Ail: 2g';

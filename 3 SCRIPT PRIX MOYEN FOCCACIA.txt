@@ -1,1 +1,1 @@
-SELECT AVG(prix) FROM foccacia;
+SELECT AVG(`prix`) AS prix_moyen FROM `foccacia`;

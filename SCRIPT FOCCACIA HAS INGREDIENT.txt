@@ -1,8 +1,9 @@
 CREATE TABLE IF NOT EXISTS `tifosi`.`foccacia_has_ingredient` (
+ `id_foccacia_has_ingredient` INT(11) NOT NULL AUTO_INCREMENT,
+ `nom_foccacia` VARCHAR(50) NOT NULL,
+  `quantite` DECIMAL(5.2) NULL,
   `nom_ingredient` VARCHAR(50) NOT NULL,
-  `quantite` INT(11) NULL,
-  `nom_foccacia` VARCHAR(50) NOT NULL,
-  PRIMARY KEY (`nom_foccacia`)
+   PRIMARY KEY (`id_foccacia_has_ingredient`),
   INDEX `fk_foccacia_has_ingredient_ingredient_idx` (`nom_ingredient` ASC),
   INDEX `fk_foccacia_has_ingredient_foccacia_idx` (`nom_foccacia` ASC),
   CONSTRAINT `fk_foccacia_has_ingredient_foccacia`
