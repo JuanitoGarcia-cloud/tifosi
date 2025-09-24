@@ -1,6 +1,0 @@
-CREATE TABLE IF NOT EXISTS `tifosi`.`foccacia` (
-  `nom_foccacia` VARCHAR(50) NOT NULL,
-  `prix` DECIMAL(5,2) NOT NULL,
-  `id_foccacia` INT(11) NOT NULL AUTO_INCREMENT,
-  PRIMARY KEY (`id_foccacia`))
-ENGINE = InnoDB;

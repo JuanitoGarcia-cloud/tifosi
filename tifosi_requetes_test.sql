@@ -65,7 +65,3 @@ SELECT `id_foccacia`,`foccacia`.`nom_foccacia` FROM `foccacia` LEFT JOIN `foccac
 ON `foccacia`.`nom_foccacia`=`foccacia_has_ingredient`.`nom_foccacia`
 WHERE `foccacia_has_ingredient`.`nom_ingredient`='Champignon: 40g' IS NULL;
 -- affiche les entêtes mais pas le résultat attendu ??
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

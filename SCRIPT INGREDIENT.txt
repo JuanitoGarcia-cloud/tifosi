@@ -1,5 +1,0 @@
-CREATE TABLE IF NOT EXISTS `tifosi`.`ingredient` (
-  `nom_ingredient` VARCHAR(50) NOT NULL,
-  `id_ingredient` INT(11) NOT NULL AUTO_INCREMENT,
-  PRIMARY KEY (`id_ingredient`))
-ENGINE = InnoDB;

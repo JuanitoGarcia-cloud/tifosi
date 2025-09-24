@@ -1,1 +1,0 @@
-SELECT AVG(`prix`) AS prix_moyen FROM `foccacia`;

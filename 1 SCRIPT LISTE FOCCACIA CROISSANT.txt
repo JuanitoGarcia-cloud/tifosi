@@ -1,2 +1,0 @@
-SELECT nom_foccacia FROM foccacia ORDER BY nom_foccacia ASC;
-

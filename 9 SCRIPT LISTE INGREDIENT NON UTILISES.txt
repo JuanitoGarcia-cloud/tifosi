@@ -1,2 +1,0 @@
-SELECT * FROM `ingredient` LEFT JOIN `foccacia_has_ingredient` ON `ingredient`.`nom_ingredient`=`foccacia_has_ingredient`.`nom_ingredient`
-WHERE `foccacia_has_ingredient`.`nom_ingredient` IS NULL;

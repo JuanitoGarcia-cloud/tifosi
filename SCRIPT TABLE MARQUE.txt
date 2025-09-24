@@ -1,1 +1,0 @@
-INSERT INTO marque (id_marque, nom_marque) VALUES (NULL, 'Coca-cola'), (NULL, 'Cristalline'), (NULL, 'Monster'), (NULL, 'Pepsico'); 

@@ -1,1 +1,0 @@
-SELECT * FROM `foccacia` LEFT JOIN `foccacia_has_ingredient` ON `foccacia`.`nom_foccacia`=`foccacia_has_ingredient`.`nom_foccacia` WHERE `nom_ingredient`='Champignon: 40g' IS NULL;
